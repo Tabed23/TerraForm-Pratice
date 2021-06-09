@@ -1,0 +1,34 @@
+ your can make some file for terrafrom 
+
+
+e.g
+
+directory / main.tf terrafrom.tfvars / variables.tf files
+ now you can define your variable in terraform.tfvars file
+e.g
+my_instance_type = "instance type"   #if we do thos it will remove the propmt option
+instance_tag = {
+ Name = " my instance"
+ foo = 1234   
+}
+or 
+variable " my instance type" {
+ type = string
+ description = "my instance"
+}
+
+# now varilabe value is in terrafrom.tfvars and variables value are define in  variables.tf
+we can also define the tags in variable
+variable "instance tags" {
+ type = object ({
+  Name = string   # key and some value
+  foo = number   # this should be number 
+ })
+}
+
+
+we can also write list
+
+variable "test list" {
+  type = list(type)
+}
