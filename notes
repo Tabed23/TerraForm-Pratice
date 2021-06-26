@@ -1,3 +1,4 @@
+# Terraform notes
  your can make some file for terrafrom 
 
 
@@ -32,3 +33,4 @@ we can also write list
 variable "test list" {
   type = list(type)
 }
+
